@@ -13,7 +13,9 @@
     "dev": "rollup -c -w",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "prepare": "husky"
+    "prepare": "husky",
+    "lint": "eslint src/",
+    "lint:fix": "eslint src/ --fix"
   },
   "author": "kseniya duboiskaya",
   "license": "ISC",
@@ -22,6 +24,7 @@
     "@babel/preset-react": "^7.24.7",
     "@babel/preset-typescript": "^7.24.7",
     "@chromatic-com/storybook": "^1.9.0",
+    "@eslint/js": "^9.10.0",
     "@rollup/plugin-commonjs": "^26.0.1",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-typescript": "^11.1.6",
@@ -34,6 +37,9 @@
     "@storybook/react-vite": "^8.2.9",
     "@storybook/test": "^8.2.9",
     "@types/react": "^18.3.5",
+    "eslint": "^9.10.0",
+    "eslint-plugin-react": "^7.35.2",
+    "globals": "^15.9.0",
     "husky": "^9.1.5",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -42,7 +48,8 @@
     "storybook": "^8.2.9",
     "styled-components": "^6.1.13",
     "tslib": "^2.7.0",
-    "typescript": "^5.5.4"
+    "typescript": "^5.5.4",
+    "typescript-eslint": "^8.4.0"
   },
   "peerDependencies": {
     "react": "^17.0.2",
