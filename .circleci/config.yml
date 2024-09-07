@@ -50,7 +50,7 @@ workflows:
       - build:
           requires:
             - lint_code
-      - run-release:
+      - run_release:
           requires:
             - build
       - publish_to_npm:
