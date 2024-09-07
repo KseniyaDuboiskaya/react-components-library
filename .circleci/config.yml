@@ -24,3 +24,9 @@ jobs:
       - run:
           name: Build
           command: npm run build
+
+workflows:
+  build_app:
+    jobs:
+      - lint_code
+      - build
