@@ -55,4 +55,4 @@ workflows:
             - build
       - publish_to_npm:
           requires:
-            - run-release
+            - run_release
