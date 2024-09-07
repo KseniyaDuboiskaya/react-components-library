@@ -29,4 +29,6 @@ workflows:
   build_app:
     jobs:
       - lint_code
-      - build
+      - build:
+          requires:
+            - lint_code
